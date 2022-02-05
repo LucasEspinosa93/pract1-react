@@ -1,23 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import Animales from './Animales';
+import Alerta from './Alerta';
 
-function App() {
+
+const App = () => {
+  const mensaje = 'Hello World!'
+  const mensajePrueba = 'Hola Gordo Sapo, estoy aprendiendo REACT con el gordoMidu'
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        {mensaje}  {/* Siempre que lleve llaves{} es una evaluación */}
+        <br />
+
+        {mensajePrueba}
+        <br />
+
+        <Animales  />
+        <br />
+
+        <Alerta color='blue' message='Estamos trabajando' />
+        <Alerta color='green' message='En un curso' />
+        <Alerta color='aqua' message='De React' />
     </div>
   );
 }
