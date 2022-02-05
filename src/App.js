@@ -21,7 +21,6 @@ const App = () => {
         <Alerta color='blue' message='Estamos trabajando' />
         <Alerta color='green' message='En un curso' />
         <Alerta color='aqua' message='De React' />
-        <Alerta color='red' message='Si no sale este mensaje ha surgido un error' />
     </div>
   );
 }
